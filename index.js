@@ -1,2 +1,4 @@
 var serverRun = require('./web');
-serverRun.start();
+var router = require('./router');
+
+serverRun.start(router.route);
