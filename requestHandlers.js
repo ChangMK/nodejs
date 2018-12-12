@@ -14,9 +14,13 @@ function start(res) {
 
 }
 
-function upload(res) {
-    res.writeHead(200, "Context-Type:text/html");
-    res.write("<h1>This is a upload.<h1>");
+function upload(res, postData) {
+    console.log("Request handler 'upload' was called.");
+    res.writeHead(200, {
+        "Content-Type": "text/plain"
+    });
+    res.write("You've sent: " + postData);
+
     res.end();
     // console.log("Request handler 'upload' was called.");
 }
