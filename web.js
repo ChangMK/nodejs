@@ -6,7 +6,6 @@ function start(route, handle) {
         var postData = "";
         var pathname = url.parse(req.url).pathname;
         console.log("Request for " + pathname + " received");
-
         req.setEncoding("utf8");
 
         req.addListener("data", function (postDataChunk) {
