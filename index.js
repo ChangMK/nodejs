@@ -7,5 +7,5 @@ handle['/'] = requestHandlers.start;
 handle['/start'] = requestHandlers.start;
 handle['/upload'] = requestHandlers.upload;
 handle['/favicon.ico'] = requestHandlers.icon;
-
+handle['/show'] = requestHandlers.show;
 serverRun.start(router.route, handle);
